@@ -21,7 +21,7 @@ Entwickelt im Rahmen der Ausbildung zum Fachinformatiker für Systemintegration 
 
 ## Live-Demo
 
-[mittagspausen-tracker auf GitHub Pages](https://felixkpm.github.io/mittagspausen-tracker)
+[mittagspausen-tracker auf GitHub Pages](https://felixkpm.github.io/mittagspausen-ausgabentracker)
 
 ## Autor
 
