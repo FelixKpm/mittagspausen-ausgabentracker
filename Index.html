@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+   
+    <head>
+        <link href="style_dashboard.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    </head>
+    <body class="titlebar">
+            <h1>Mittagspausen-Ausgaben Tracker</h1>
+            <h2 id="month-h2"><em>Aktueller Monat</em></h2>
+    </body>
+    <body click>
+        <table class="spended">
+            <thead>
+             <tr>
+                <th scope='col' id="weekly-th" class="ki"><a href="./Expenseviewer.html">Diese Woche</a><br></th>
+                <th scope='col' id="monthly-th" class="ki">Dieser Monat<br></th>
+                <th scope="col" id="average-th" class="ki">Ø Pro Tag (Dieser Monat)<br></th>
+            </tr>
+        </thead>
+        </table>
+
+        <div class="newExpense">
+            <form id="expense-form">
+                    <h3 id="form-header">Neue Ausgabe</h3>
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="description">Beschreibung</label>
+                            <input id="description" name="description" type="text" maxlength="30" placeholder="z.B. Monster">
+                        </div>
+                        <div class="input-group">
+                            <label for="total">Betrag (€)</label>
+                            <input id="total" name="total" type="text" placeholder="0,00€">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="category">Kategorie</label>
+                            <select id="category">
+                                <option value="" disabled selected>Kategorie wählen</option>
+                                <option value="edeka">EDEKA</option>
+                                <option value="trinkgut">Trinkgut</option>
+                                <option value="mcdonalds">MC Donalds</option>
+                                <option value="other">Andere</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="date">Datum</label>
+                            <input id="date" name="date" type="date">
+                        </div>
+                        
+                        <div class="add-button">
+                            <button id="add-expense" disabled><span style="font-size: 17px;">＋</span> Hinzufügen</button>
+                        </div>
+                        <div class="sort">
+                            <select id="sort-select">
+                                <option value="date-new">Neuste zuerst (Standard)</option>
+                                <option value="date-old">Älteste zuerst</option>
+                                <option value="total-low">Niedriegste zuerst</option>
+                                <option value="total-high">Höchste zuerst</option>
+                            </select>
+                        </div>
+                    </div>
+            </form>
+        </div>
+
+        <div id="entryList-container" class="EntryList-Container">
+           <h3 id="entry-header">Einträge</h3> 
+                <div class="entries">
+                    <img class="icons" src="./media/restaurant_icon.png">
+                        <div class="entry-info">
+                            <p class="entry-name">Döner</p>
+                            <p class="entry-meta">12.05.2026 - Restaurant</p>
+                        </div>    
+                        
+                        <div class="entry-actions">
+                        <p class="entry-price">6,50€</p>
+                        <button class="edit-button">
+                        <img class="action-icons" src="./media/edit_icon.png">
+                        </button>
+                        <button class="delete-button">
+                        <img class="action-icons" src="./media/delete_icon.png">
+                        </button>
+                    </div>
+                </div>
+                <div class="entries">
+                    <img class="icons" src="./media/edeka.png">
+                        <div class="entry-info">
+                            <p class="entry-name">Einkauf bei EDEKA</p>
+                            <p class="entry-meta">12.05.2026 - EDEKA</p>
+                        </div>    
+                        
+                        <div class="entry-actions">
+                        <p class="entry-price">17,68€</p>
+                        <img class="action-icons" src="./media/edit_icon.png">
+                        <img class="action-icons" src="./media/delete_icon.png">
+                        </div>
+                </div>
+                <div class="entries">
+                    <img class="icons" src="./media/mcdonald-s.svg">
+                        <div class="entry-info">
+                            <p class="entry-name">Big Mac</p>
+                            <p class="entry-meta">12.05.2026 - McDonald's</p>
+                        </div>    
+                        
+                        <div class="entry-actions">
+                        <p class="entry-price">4,99€</p>
+                        <img class="action-icons" src="./media/edit_icon.png">
+                        <img class="action-icons" src="./media/delete_icon.png">
+                        </div>
+                </div>
+
+
+        </div>
+    
+    <p class="disclaimer">Funktionen in dieser Farbe sind KI generiert,<br> weil ich sie cool fand, aber die Logik nicht verstanden habe :)<br>Alles andere ist von mir</p>
+    
+        </div>
+        
+        <script src="script.js"></script>  
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

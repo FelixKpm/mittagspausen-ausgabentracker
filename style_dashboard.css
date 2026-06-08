@@ -1,0 +1,245 @@
+html {
+    background-color: #1f1f1e;
+    font-family: "Share Tech Mono";
+}
+
+
+.titlebar h1 {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-left: 35px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.titlebar h2 {
+    width: 50%;
+    margin: 0 auto;
+    padding-left: 35px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.spended {
+    border-collapse: separate;
+    border-spacing: 15px;
+    table-layout: fixed;
+    width: 50%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.spended th {
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    width: 33%;
+    border: solid 1px #424240;
+    border-radius: 10px;
+    color: orangered;
+    background-color: #252524;
+}
+
+.newExpense {
+    width:calc(50% - 50px);
+    margin: 0px auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 25px;
+    border: solid 1px #424240;
+    border-radius: 10px;
+    background-color: rgba(48, 48, 46, 0.75);
+    color: #b8b6ad;
+}
+
+.newExpense h3 {
+    padding-top: 10px;
+    padding-left: 5.25%;
+    text-align: left;
+}
+
+.newExpense label {
+    display: grid;
+    font-weight: bold;
+    padding-left: 2px;
+    padding-bottom: 3px;
+    width: 80%;
+}
+
+.newExpense input, .newExpense select {
+    display: grid;
+    margin-bottom: 10px;
+}
+
+.newExpense .input-grid {
+    display: grid !important;
+    grid-template-columns: 1 1 !important;
+    gap: 10px !important;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding-left: 5%;
+}
+
+input {
+    width: 80%;
+    height: 30px;
+    font-weight: 700;
+    font-family: "Share Tech Mono";
+    color: #b8b6ad;
+    background-color: #252524;
+    border: solid 1px #424240;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+input::placeholder {
+    color: #b8b6ad;
+    font-family: "Share Tech Mono";
+}
+
+select {
+    width: 83.5%;
+    height: 34px;
+    font-weight: 700;
+    font-family: "Share Tech Mono";
+    color: #b8b6ad;
+    background-color: #252524;
+    border: solid 1px #424240;
+    border-radius: 10px;
+    padding-left: 5px;
+    
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    margin-right: 10px;
+    filter: invert(1);
+}
+
+.add-button #add-expense {
+    width: 83.5%;
+    height: 35px;
+    font-family: "Share Tech Mono";
+    font-weight: bold;
+    text-align: left;
+    padding-left: 10px;
+    color: #93c5fd;
+    background-color: #1e3a5f;
+    border: solid 1px #2d5a8e;
+    border-radius: 10px;
+}
+
+.EntryList-Container {
+    width: calc(50% - 125px);
+    background-color: rgba(48, 48, 46, 0.75);
+    margin: 10px auto;
+    border: solid 1px #424240;
+    border-radius: 10px;
+    padding-left: 49px;
+    padding-right: 49px;
+}
+
+#entry-header {
+    padding-left: 10px;
+    Color: #b8b6ad;
+}
+
+.entries {
+    width: 100%;
+    padding-left: 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: solid 1px #424240;
+}
+
+img.icons {
+    height: 24px;
+    width: 24px;
+    padding: 5px;
+    background-color: #252524;
+    border: solid 2px #424240;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+p.entry-name, p.entry-meta {
+   color:#b8b6ad;
+   font-weight: bold;
+   text-align: left;
+   justify-content: left;
+   padding-bottom: 0;
+   margin: auto;
+}
+
+
+
+img.action-icons {
+    display: flex;
+    flex-direction: row;
+    height: 24px;
+    width: 24px;
+    padding: 5px;
+    background-color: #252524;
+    border: solid 2px #424240;
+    border-radius: 10px;
+}
+
+.entry-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color:#b8b6ad;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.titlebar-viewer {
+    width: 50%;
+    margin: 0 auto;
+    padding-left: 35px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.edit-button {
+    background-color: transparent;
+    border: 0;
+}
+
+.delete-button {
+    background-color: transparent;
+    border: 0;
+}
+
+#add-expense:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.ki #weeklySpend, #monthlySpend #avgSpend {
+    color: orangered !important;
+}
+
+.disclaimer {
+    color: orangered;
+    width: 50%;
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 35px;
+    text-align: left;
+}
